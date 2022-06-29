@@ -1,0 +1,6 @@
+<textarea id="markdown-content"
+          [value]="value"
+          [rows]="rows"
+          [cols]="cols"
+          [placeholder]="placeholder"
+          (keyup)="onKeyup($any($event.target).value)"></textarea>

@@ -1,0 +1,18 @@
+<div class="menu-list">
+  <div id="custom-button-toggle " class="custom-button-toggle " (click)="hideMenu()">
+    <button [className]="isHidden?'plus round': 'minus round'"
+            id="plus" class="round plus">{{ isHidden ? "+" : "-"}}</button>
+    <h4>Documentation Example</h4>
+  </div>
+  <ng-container *ngFor="let page of pages; let i = index">
+    <li *ngIf="isHidden">
+      <a routerLink="/articles/{{page.id}}"
+         routerLinkActive="active-link"
+         (click)="onSelected(page.id)"
+      >
+
+      {{i + 1}}. {{ page.name}}
+      </a>
+    </li>
+  </ng-container>
+</div>

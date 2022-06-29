@@ -1,0 +1,38 @@
+<div class="app-rectangle-button ">
+  <app-rectangle-button [buttonDescription]="'Create new page'"
+                        routerLink="/page-create/new-page"></app-rectangle-button>
+</div>
+
+<div class="table-title">
+  <div><b>Delete: </b></div>
+  <div><b>Name: </b></div>
+  <div><b>Last update: </b></div>
+  <div><b>Date of creation: </b></div>
+</div>
+
+<div class="row-container">
+  <ul>
+    <li *ngFor="let page of pages; let i = index">
+
+      <app-page-table-row routerLink="/articles/{{page.id}}"
+                          [pageId]="page.id"
+                          [pageName]="page.name"
+                          [dateOfUpdate]="page.dateOfUpdate"
+                          [dateOfCreation]="page.dateOfCreation"
+                          bgcColor="{{i%2!==0?'#DDE1E4':'white'}}"
+                          (click)="onSelected(page.id)">
+      </app-page-table-row>
+    </li>
+
+    <!--    <div *ngFor="let topic of topics;">-->
+    <!--      <li *ngFor="let page of topic.articleSet; let i = index">-->
+
+    <!--        <app-page-table-row routerLink="/page-create/{{page.url}}" [pageName]="page.name"-->
+    <!--                            [dateOfUpdate]="page.dateOfUpdate"-->
+    <!--                            [dateOfCreation]="page.dateOfCreation"-->
+    <!--                            bgcColor="{{i%2!==0?'#DDE1E4':'white'}}">-->
+    <!--        </app-page-table-row>-->
+    <!--      </li>-->
+    <!--    </div>-->
+  </ul>
+</div>

@@ -1,0 +1,13 @@
+@import "src/styles";
+
+form {
+  margin-top: 50px;
+
+  .form-group{
+    color: lighten(black, 45%);
+  }
+
+}
+.button-container{
+  float:right;
+}

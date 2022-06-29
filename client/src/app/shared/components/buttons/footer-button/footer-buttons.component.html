@@ -1,0 +1,14 @@
+<div class="footer">
+  <div [ngStyle]="{'visibility': navigation_previous === 0? 'hidden': 'visible'}">
+    <button routerLink="/articles/{{navigation_previous}}"
+            class="previous"
+            (click)="onSelected((navigation_previous))"><i class="fas fa-arrow-alt-circle-left"> </i> Previous
+    </button>
+  </div>
+  <div *ngIf="navigation_next!==totalLength ">
+    <button routerLink="/articles/{{navigation_next}}"
+            class="next"
+            (click)="onSelected((navigation_next))"
+    > Next <i class="fas fa-arrow-alt-circle-right"></i></button>
+  </div>
+</div>

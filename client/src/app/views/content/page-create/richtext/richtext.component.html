@@ -1,0 +1,26 @@
+<form [formGroup]="form" novalidate autocomplete="off" (ngSubmit)="onSubmit()">
+
+  <app-form-field label="Title: " [control]="form.controls.input"
+                  [patternError]="regexErrors.latinAndSpaces">
+    <app-input formControlName="input" placeholder="Some title"></app-input>
+  </app-form-field>
+
+  // TODO
+  <app-form-field label="Markdown content:" [control]="form.controls.textarea">
+    <app-textarea formControlName="textarea" rows="15" cols="140" placeholder="Some markdown content..."></app-textarea>
+  </app-form-field>
+
+</form>
+<div class="button-container">
+  <app-rectangle-button buttonDescription="Cancel" routerLink="../"></app-rectangle-button>
+  <app-rectangle-button buttonDescription="Save"></app-rectangle-button>
+</div>
+<br>
+<code>
+  {{ form.value | json }}
+  {{ form.valid | json }}
+</code>
+
+<button (click)="onPatchValue()">Patch Value</button>
+
+

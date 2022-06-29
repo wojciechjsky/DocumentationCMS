@@ -1,0 +1,21 @@
+@import "src/styles";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 25vw 70vw;
+  grid-template-rows: 1fr;
+  grid-template-areas:  "aside mainContent";
+
+  app-sidebar {
+    grid-area: aside;
+  }
+
+  .app-content {
+    grid-area: mainContent;
+  }
+}

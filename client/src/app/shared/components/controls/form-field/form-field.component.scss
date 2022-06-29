@@ -1,0 +1,30 @@
+@import "src/styles";
+
+.form-field {
+
+  &__label {
+    display: block;
+    margin: 0 0 6px 0;
+  }
+
+  &_control {
+    display: block;
+  }
+  &__error {
+    opacity: 0;
+    font-size: 12px;
+    color: $error;
+    padding: 4px 0;
+    min-height: 22px;
+
+    span {
+      display: block;
+    }
+  }
+  &_error {
+    .form-field__error {
+      opacity: 1;
+    }
+  }
+
+}

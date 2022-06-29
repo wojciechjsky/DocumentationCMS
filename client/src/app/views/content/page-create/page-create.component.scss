@@ -1,0 +1,30 @@
+@import "src/styles";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.app-rectangle-button {
+  margin-left: 80%;
+  font-size: 12px;
+}
+
+.table-title {
+  @include rowLayout;
+  background-color: #C4C4C4;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr ;
+  height: 50px;
+  line-height: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+app-page-table-row:hover{
+  font-weight: bold;
+}
+
+li {
+  list-style-type: none;
+}

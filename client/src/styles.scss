@@ -1,0 +1,39 @@
+@import "assets/scss/variables";
+@import "assets/scss/buttons";
+@import "assets/scss/fonts";
+@import "assets/scss/mixins";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+img{
+  max-width: 100%;
+  justify-content: center;
+}
+
+.active-link {
+  color: gold !important;
+  font-weight: bold;
+}
+
+::ng-deep .page-title{
+  height: 5vh;
+  line-height: 2vh;
+  justify-content: center;
+  margin: auto;
+
+  text-align: center;
+  border-bottom: solid 1px $color-border-spacer;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

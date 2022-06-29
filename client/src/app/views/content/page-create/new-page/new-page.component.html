@@ -1,0 +1,24 @@
+<app-page-title pageTitle="Create Page"></app-page-title>
+
+<div class="form-container">
+
+  <form [formGroup]="form" novalidate autocomplete="off" (ngSubmit)="onSubmit()">
+    <app-form-field label="Page name: ">
+      <app-input formControlName="name" placeholder="Page name" inputPxWidth="500"></app-input>
+    </app-form-field>
+    <app-form-field label="Url: ">
+      <app-input formControlName="url" placeholder="url" inputPxWidth="500"></app-input>
+    </app-form-field>
+    <app-form-field label="Markdown content:">
+      <app-markdown-textarea></app-markdown-textarea>
+    </app-form-field>
+
+    <div class="button-container">
+      <app-rectangle-button class="btnCancel" btnColor="gray" buttonDescription="Cancel"></app-rectangle-button>
+      <app-rectangle-button class="btnSave" type="submit" buttonDescription="Save"></app-rectangle-button>
+    </div>
+  </form>
+  <br>
+</div>
+
+

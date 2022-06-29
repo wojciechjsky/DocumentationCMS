@@ -1,0 +1,18 @@
+<div class="content" >
+  <app-square-button icon="./assets/img/icons/edit-custom.png"
+                     btnPxWidth="30"
+                     btnActiveLinkDecorator="edit"
+                     routerLink="/editor"
+                     (click)="onEditClick()">
+  </app-square-button>
+  <app-square-button icon="./assets/img/icons/download.png"
+                     btnActiveLinkDecorator="download"
+                     btnPxWidth="30"
+                     (click)="downloadPage()">
+
+  </app-square-button>
+</div>
+<div id="content" [innerHTML]=" page.content_en | MarkdownToHtml "></div>
+
+
+<app-footer-buttons></app-footer-buttons>

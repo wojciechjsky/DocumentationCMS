@@ -1,0 +1,16 @@
+@import '../../../../styles';
+
+.down-sidebar-container {
+  font-size: 12px;
+  display: grid;
+  justify-content: stretch;
+  grid-template-columns: 1fr 1fr;
+  border-top: #fff solid 1px;
+  background-color: $color-down-sidebar;
+  padding: 10px 0 0 10px;
+  color: white;
+
+  .row2 {
+    grid-column: 1/3;
+  }
+}

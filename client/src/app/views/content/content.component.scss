@@ -1,0 +1,15 @@
+@import "src/styles";
+
+.content {
+  &-box {
+    justify-content: center;
+    margin: auto;
+    padding: 10px 0 100px 0;
+  }
+  .page-edit-buttons{
+    text-align: right;
+  }
+.d{
+  background-color: pink;
+}
+}

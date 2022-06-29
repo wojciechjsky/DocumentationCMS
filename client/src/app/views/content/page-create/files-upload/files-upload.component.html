@@ -1,0 +1,40 @@
+<div class="file-uploader">
+  <div class="file-uploader-left">
+    <form [formGroup]="form" novalidate autocomplete="off" (ngSubmit)="onSubmit()">
+      <app-form-field label="Image name:" [control]="form.controls.title">
+        <app-input inputPxWidth="450" formControlName="title"></app-input>
+      </app-form-field>
+
+      <app-form-field label="Alt text:" [control]="form.controls.alt">
+        <app-input inputPxWidth="450" formControlName="alt"></app-input>
+      </app-form-field>
+    </form>
+
+    <div class="dropzone">
+      <input type="file" #fileDropRef id="fileDropRef" multiple>
+      <img src="assets/img/icons/dragDrop.png" alt="">
+      <h3>Drag and drop image here</h3>
+      <!--  <h3>or</h3>-->
+      <!--  <label for="fileDropRef">Browse for file</label>-->
+    </div>
+  </div>
+
+  <div class="file-uploader-right">
+
+    <div class="button-container">
+      <app-rectangle-button btnPxWidth="100" class="save" buttonDescription="Cancel" routerLink="../"></app-rectangle-button>
+      <app-rectangle-button btnPxWidth="100" btnColor="orange" buttonDescription="Upload"></app-rectangle-button>
+    </div>
+
+    <br>
+  </div>
+</div>
+
+
+
+<!--<code>-->
+<!--  {{ form.value | json }}-->
+<!--  {{ form.valid | json }}-->
+<!--</code>-->
+
+<!--<button (click)="onPatchValue()">Patch Value</button>-->

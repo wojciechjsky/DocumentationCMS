@@ -1,0 +1,17 @@
+@import "../../../../styles";
+
+.main-sidebar-name {
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: $color-down-sidebar;
+  color: white;
+  border-bottom: solid 1px;
+  height: 10vh;
+
+  span{
+    position: relative;
+    top: 40%;
+  }
+}

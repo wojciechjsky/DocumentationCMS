@@ -1,0 +1,14 @@
+@import "src/styles";
+
+.title {
+  height: 10vh;
+  line-height: 10vh;
+  justify-content: center;
+  margin: auto;
+
+  border-top: solid 1px $color-border-spacer;
+  border-bottom: solid 1px $color-border-spacer;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}

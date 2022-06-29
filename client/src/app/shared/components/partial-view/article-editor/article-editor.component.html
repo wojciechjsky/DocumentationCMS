@@ -1,0 +1,26 @@
+<form [formGroup]="form" novalidate autocomplete="off" (ngSubmit)="onSaveClick()">
+  <div class="form-group">
+    <app-form-field label="Sidebar title: ">
+      <app-input formControlName="title" id="title" aria-describedby="title"></app-input>
+
+    </app-form-field>
+  </div>
+  <div class="form-group">
+    <app-form-field label="Markdown content: ">
+      <app-markdown-textarea formControlName="content"></app-markdown-textarea>
+    </app-form-field>
+  </div>
+</form>
+
+
+<div class="button-container">
+  <app-rectangle-button buttonDescription="Cancel"
+                        routerLink="/articles/{{markdownPage.url}}">
+  </app-rectangle-button>
+  <app-rectangle-button buttonDescription="Save"
+                        (click)="onSaveClick()"
+                        (click)="refreshOnClick()">
+  </app-rectangle-button>
+
+</div>
+

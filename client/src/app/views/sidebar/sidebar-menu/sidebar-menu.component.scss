@@ -1,0 +1,49 @@
+@import "../../../../styles";
+
+.menu-list {
+  color: white;
+  background-color: $color-down-sidebar;
+
+  .custom-button-toggle {
+    display: flex;
+  }
+
+  .plus {
+    position: relative;
+    top: 10px;
+  }
+
+  .minus {
+    position: relative;
+    top: 10px;
+  }
+
+  .custom-button-toggle :hover {
+    color: gold;
+  }
+
+  li {
+    font-size: 12px;
+    position: relative;
+    top: -20px;
+    left: 50px;
+    list-style-type: none;
+    padding-top: 10px;
+    justify-content: center;
+  }
+
+  li:hover {
+    color: gold;
+    width: 50%;
+    border-radius: 5%;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: gold;
+  }
+}

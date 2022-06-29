@@ -1,0 +1,27 @@
+<app-page-title pageTitle="Create Topic"></app-page-title>
+
+<div class="form-container">
+
+  <form [formGroup]="form" novalidate autocomplete="off" (ngSubmit)="onSubmit()">
+    <app-form-field label="Topic title: ">
+      <app-input formControlName="title" placeholder="Some title" inputPxWidth="500"></app-input>
+    </app-form-field>
+    <app-form-field label="url: ">
+      <app-input formControlName="url" placeholder="Some url" inputPxWidth="500"></app-input>
+    </app-form-field>
+    <div class="button-container">
+      <app-rectangle-button class="btnCancel" btnColor="gray" buttonDescription="Cancel"></app-rectangle-button>
+      <app-rectangle-button class="btnSave" buttonDescription="Save"></app-rectangle-button>
+    </div>
+  </form>
+  <br>
+  <code>
+    {{ form.value | json }}
+    {{ form.valid | json }}
+  </code>
+
+  <button (click)="onPatchValue()">Patch Value</button>
+
+</div>
+
+

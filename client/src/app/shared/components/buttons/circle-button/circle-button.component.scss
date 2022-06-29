@@ -1,0 +1,19 @@
+@import "src/styles";
+
+label {
+  display: flex;
+
+  img {
+    position: relative;
+    top: -2px;
+  }
+
+  div {
+    position: relative;
+    top: 15px;
+  }
+}
+
+label:hover {
+  color: gold;
+}

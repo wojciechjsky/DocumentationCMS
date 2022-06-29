@@ -1,0 +1,16 @@
+@import 'src/styles';
+
+  .table {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+
+    &__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+

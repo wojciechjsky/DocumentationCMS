@@ -1,0 +1,113 @@
+@import 'variables';
+
+button {
+  justify-content: center;
+  font-weight: bold;
+  margin: 8px;
+  border: 1px solid #000000;
+}
+
+button {
+  height: 20px;
+
+  img {
+    width: 12px;
+    height: 12px;
+    position: relative;
+
+  }
+}
+
+.round {
+  color: black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.square {
+  height: 25px;
+  border-radius: 10%;
+}
+
+.plus {
+  color: black;
+  background-color: $color-plus-button;
+
+  span {
+    position: relative;
+    top: -1px;
+  }
+}
+
+.plus:hover {
+  background-color: $color-plus-button-hover;
+}
+
+.minus {
+  color: black;
+  background-color: $color-minus-button;
+
+  span {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.minus:hover {
+  background-color: $color-minus-button-hover;
+}
+
+.edit {
+  background-color: $color-edit-button;
+}
+
+.edit:hover {
+  background-color: $color-edit-button-hover;
+}
+
+.download {
+  background-color: $color-download-button;
+  width: 25px;
+}
+
+.download:hover {
+  background-color: $color-download-button-hover;
+}
+
+
+.create-button{
+  background-color: $color-plus-button;
+}
+
+.remove-button {
+  background-color: $color-minus-button;
+}
+
+.download-button {
+  background-color: $color-download-button;
+}
+
+.question {
+  background-color: #E39828;
+  width: 14px;
+  height: 14px;
+  font-size: 10px;
+  //text-align: left;
+  font-weight: bold;
+  text-align: center;
+
+  img {
+    width: 8px;
+    height: 8px;
+    justify-content: center;
+    position: relative;
+    left: -4px
+  }
+}
+
+.question:hover {
+  background-color: darkorange;
+}
